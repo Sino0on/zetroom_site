@@ -1,0 +1,76 @@
+
+// Fonts
+$ff-raleway: "Raleway", sans-serif;
+$ff-roboto: "Roboto", sans-serif;
+$ff-poppins: "Poppins", sans-serif;
+$ff-opensans: "Open Sans", sans-serif;
+$ff-inter: "Inter", sans-serif;
+$ff-rubik: "Rubik", sans-serif;
+$ff-montserrat: "Montserrat", sans-serif;
+$ff-mulish: 'Mulish', sans-serif;
+
+
+// Font Weights
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semiBold: 600;
+$fw-bold: 700;
+$fw-extraBold: 800;
+
+// Colors
+$color-black: #000;
+$color-yellow: #f0a500;
+$color-blue: #e3ecff;
+$color-lh-blue: #cffffd;
+$color-light-blue: #515757;
+$color-yellow-light: #ffefab;
+$color-pink: #ffebf9;
+$color-violet: #775ca6;
+$color-green: #00afa9;
+$color-dark-violet: #475174;
+$color-white: #fff;
+$color-dark-grey: #616161;
+$color-lilac: #d5c8fc;
+$color-light-grey: rgba(97, 97, 97, 0.59);
+$color-coral: #ff7272;
+$color-text-vol: rgba(60, 60, 67, 0.85);
+$color-light-lilac: rgba(177, 153, 249, 0.5);
+$color-shadowblue: #26fff2;
+$color-grey: #949494;
+$color-box: rgba(0, 0, 0, 0.25);
+$color-pale-grey:#DFE3E8;
+
+// Title
+@mixin title {
+  font-family: $ff-rubik;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: 40px;
+  line-height: 41px;
+  color: $color-black;
+}
+// Sub Title
+@mixin subtitle {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: 36px;
+  color: $color-black;
+}
+
+// Texts
+@mixin texts {
+  font-family: $ff-rubik;
+  font-style: normal;
+  font-weight: $fw-regular;
+  font-size: 24px;
+  color: $color-black;
+}
+
+@mixin litletext {
+  font-family: $ff-rubik;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: $fw-regular;
+  color: $color-black;
+}

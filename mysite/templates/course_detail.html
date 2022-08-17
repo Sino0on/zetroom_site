@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Курс {{ course.title }}
+{% endblock %}
+{% block content %}
+
+    <div class="about-frontend__main-title">
+        <h1>Курс <span class="span3">{{ course.title }}</span></h1>
+    </div>
+    <section class="about-frontend">
+        <div class="container">
+            <div class="about-frontend__txt">
+                <p class="about-frontend__descr">{{ course.description }}</p>
+<!--                <h2 class="about-frontend__title">Кто такой <span class="span2"><span-->
+<!--                            class="span3">F</span>ront-end</span>-->
+<!--                    разработчик?</h2>-->
+<!--                <p class="about-frontend__descr"><span class="span2"><span class="span3">F</span>ront-end</span>-->
+<!--                    разработчик занимается версткой шаблона сайта и созданием пользовательского интерфейса. Обычно-->
+<!--                    <span class="span2"><span class="span3">F</span>ront-end</span> разработчик — это мастер на все-->
+<!--                    руки. Он просто обязан быть искусным верстальщиком и-->
+<!--                    хорошим программистом.-->
+<!--                </p>-->
+            </div>
+        </div>
+    </section>
+    <section class="about-course">
+        <div class="container">
+            <div class="about-course__inner">
+                <div class="about-course__wrapper">
+                    <h2 class="about-course__title">Как проходит обучение?</h2>
+                    <div class="about-course__list">
+                        <div class="about-course__list__item">
+                            <img src="{% static './assets/images/01.png' %}" alt="01" class="about-course__list__item-img">
+                            <p class="about-course__list__item-descr">Изучаете теорию и практикуетесь на задачах,
+                                приближённых к
+                                реальным.</p>
+                        </div>
+                        <div class="about-course__list__item">
+                            <img src="{% static './assets/images/02.png' %}" alt="02" class="about-course__list__item-img">
+                            <p class="about-course__list__item-descr">Изучаете теорию и практикуетесь на задачах,
+                                приближённых к
+                                реальным.</p>
+                        </div>
+                        <div class="about-course__list__item">
+                            <img src="{% static './assets/images/03.png' %}" alt="03" class="about-course__list__item-img">
+                            <p class="about-course__list__item-descr">Изучаете теорию и практикуетесь на задачах,
+                                приближённых к
+                                реальным.</p>
+                        </div>
+                    </div>
+                </div>
+                {% if course.image %}<img src="{{ course.image.url }}" alt="person" class="about-course__img">
+                            {% else %}<img src="{% static './assets/images/Course2.png' %}" alt="person" class="about-course__img">
+                            {% endif %}
+
+            </div>
+        </div>
+    </section>
+    <section class="about-program">
+        <div class="container">
+            <div class="about-program__inner">
+                <div class="about-program__left">
+                    <h3 class="about-program__left-title">Программа обучения</h3>
+                    <div class="about-program__left-txt">
+                        {% if course.education %}
+                        <p class="about-program__left-txt-p">{{ course.education|safe }}
+                        </p>
+                        {% else %}
+                        <p class="about-program__left-txt-p">В ходе первых восьми недель вы изучите основы IT-профессий
+                            и точных наук, которые пригодятся вам в работе
+                        </p>
+                        <p class="about-program__left-txt-p">Откроете для себя языки программирования, их принципиальные
+                            отличия и практики использования
+                        </p>
+                        <p class="about-program__left-txt-p txt3">Погрузитесь в тему создания структур данных
+                            Разберетесь в понятии информатики на практике
+                        </p>
+                        <p class="about-program__left-txt-p txt4">Пройдете курс прикладной математики: булева алгебра,
+                            логика, объединение множеств
+
+                        </p>
+                        <p class="about-program__left-txt-p">Изучите операционные системы, их особенности и механизм
+                            работы</p>
+                        <p class="about-program__left-txt-p txt6">Поработаете в области контроля версий
+                            Узнаете, как настроить собственные девайсы. <br>
+                            Изучите ключевые инструменты IT, стандарты кодирования, базы данных и системы аналитики
+                        </p>
+                        <p class="about-program__left-txt-p txt7">Соприкоснетесь с профессиями в разработке, спецификой
+                            их работы и сможете выбрать интересующее направление для обучения дальнейшей специализации
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="about-program__right">
+                    <h3 class="about-program__right-title">Что вы изучите?</h3>
+                    <div class="about-program__right__list">
+                        {% if Facts %}
+                        {% for i in Facts %}
+                        <div class="about-program__right__list-blc{{forloop.counter}}">
+                            <p class="about-program__right__list-descr">{{ i.title }}</p>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <div class="about-program__right__list-blc1">
+                            <p class="about-program__right__list-descr"> программирования</p>
+                        </div>
+                        <div class="about-program__right__list-blc2">
+                            <p class="about-program__right__list-descr">Базы данных</p>
+                        </div>
+                        <div class="about-program__right__list-blc3">
+                            <p class="about-program__right__list-descr">Профессии в IT</p>
+                        </div>
+                        <div class="about-program__right__list-blc4">
+                            <p class="about-program__right__list-descr">Алгоритмы и структуры</p>
+                        </div>
+                        <div class="about-program__right__list-blc5">
+                            <p class="about-program__right__list-descr">Операционные системы
+                            </p>
+                        </div>
+                        <div class="about-program__right__list-blc6">
+                            <p class="about-program__right__list-descr">Стандарты кодирования
+
+                            </p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="about-program__img-inner">
+                <div class="about-program__img-wrapper">
+                    <img src="{% static './assets/images/Illustration-fr.png' %}" alt="иллюстрация" class="about-program__bgimg1">
+                    <img src="{% static './assets/images/Illustration-fr2.png' %}" alt="иллюстрация1" class="about-program__bgimg2">
+                </div>
+                <img src="{% static './assets/images/figur.png' %}" alt="" class="about-program__bgimg3">
+                <img src="{% static './assets/images/figur2.png' %}" alt="" class="about-program__bgimg4">
+            </div>
+        </div>
+
+    </section>
+    <section class="course-call-to-action">
+        <div class="container">
+            <div class="course-call-to-action__blc">
+                <div class="course-call-to-action__blc-inner">
+                    <div class="course-call-to-action__left">
+                        <h4 class="course-call-to-action__left-title">Запись на курс</h4>
+                        <p class="course-call-to-action__left-descr">Оставьте завяку и мы с Вами свяжемся</p>
+                        <div class="course-call-to-action__left-list">
+                            <div class="course-call-to-action__left-list-item">
+                                <h5 class="course-call-to-action__left-list-title">Старт</h5>
+                                <p class="course-call-to-action__left-list-descr">Совсем скоро</p>
+                            </div>
+                            <div class="course-call-to-action__left-list-item">
+                                <h5 class="course-call-to-action__left-list-title">Стоимость</h5>
+                                <p class="course-call-to-action__left-list-descr">{{ course.price }}с за 1 месяц</p>
+                            </div>
+                        </div>
+                        <hr class="course-call-to-action__line">
+<!--                        <div class="course-call-to-action__left-list2">-->
+<!--                            <div class="course-call-to-action__left-list-item time">-->
+<!--                                <h5 class="course-call-to-action__left-list-title t-title">График обучения</h5>-->
+<!--                                <p class="course-call-to-action__left-list-descr">Пн/Ср/Пт<span class="span">14:00 /-->
+<!--                                        19:00</span> Длительность 1ч 20-->
+<!--                                    мин</p>-->
+<!--                            </div>-->
+<!--                            <div class="course-call-to-action__left-list-item1">-->
+<!--                                <p class="course-call-to-action__left-list-item1-txt">Оффлайн</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+
+                    </div>
+                    <div class="course-call-to-action__right">
+                        <form class="course-call-to-action__form" method="post" action="">
+                            {% csrf_token %}
+                            {{ form.name }}
+                            {{ form.phone }}
+                            <input class="course-call-to-action__right-btn" type="submit" value="Записаться на курс">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <div class="questions-inner">
+                <div class="questions-inner__item">
+                    <img src="{% static './assets/images/sms.png' %}" alt="" class="questions-inner__img">
+                    <h1 class="questions-inner__title">
+                        Часто задаваемые <span>вопросы</span>
+                    </h1>
+                </div>
+                <div class="questions-inner-all-accordions__accordion">
+                    {% for i in questions %}
+                    <div class="questions-inner-all-accordions__accordion__header">
+                        {{ i.title }}
+                    </div>
+                    <div class="questions-inner-all-accordions__accordion__header__body">
+                        <p class="questions-inner-all-accordions__accordion__header__descr">
+                            {{ i.answer }}
+                        </p>
+                    </div>
+                    <hr class="questions-inner-all-accordions__accordion-hr">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}

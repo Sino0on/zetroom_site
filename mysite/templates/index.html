@@ -1,0 +1,456 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+ZetRoom
+{% endblock %}
+{% block content %}
+        <!-- <div class="container">
+        <img class="bg-img1" src="./assets/images/Rectangle 88.png" alt="design elements">
+    </div> -->
+
+
+        <section class="top-screen">
+            <div class="container">
+                <div class="top-screen__inner">
+                    <div class="top-screen__banner">
+                        <div class="top-screen__title-inner">
+                            <img src="{% static './assets/images/IT.png' %}" class="top-screen__title1-img">
+                            <h1 class="top-screen__title1">– не так страшно, </h1>
+                        </div>
+                        <h1 class="top-screen__title2">
+                            как кажется
+                        </h1>
+                        <p class="top-screen__descr">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident, ea totam
+                            perferendis
+                            laboriosam sit praesentium! Blanditiis a iusto unde?
+                        </p>
+                        <a href="#courses" class="top-screen__btn">Выбрать курс</a>
+                    </div>
+                    <div class="top-screen__img1">
+                        <img class="top-screen__img-person" src="{% static 'assets/images/figure.png' %}" alt="person">
+                    </div>
+                    <div class="top-screen__img2">
+                        <img class="top-screen__img-butterfly" src="{% static 'assets/images/1.png' %}" alt="butterfly">
+                    </div>
+                    <img class="top-screen__img3" src="{% static './assets/images/Illustration.png' %}" alt="design elements">
+                    <img class="top-screen__img4" src="{% static './assets/images/group.png' %}" alt="">
+                </div>
+                <!-- <img class="bg-img2" src="./assets/images/Group1.png" alt="design elements"> -->
+
+                <a id="arrow" href="#footer">
+                    <img class="top-screen__arrow" src="{% static './assets/images/Arrow.svg' %}" alt="">
+                </a>
+            </div>
+        </section>
+
+        <section class="about1" id="about1">
+            <div class="container">
+                <div class="about1-inner">
+                    <div class="about1-inner__item1">
+                        <h3 class="about1-inner__item1-title">
+                            Чем мы отличаемся от других школ?
+                        </h3>
+                        <p class="about1-inner__item1-descr">
+                            <span>ZETROOM</span> - уникальная учебная площадка, которая отличается интересными
+                            занятиями,
+                            современными методами обучения, и индивидуальным подходом к каждому ученику
+                        </p>
+                    </div>
+                    <img class="about1-inner__item1-img5" src="{% static './assets/images/casual-life-3d-neural-network 1.png' %}"
+                        alt="3d-neural-network">
+                </div>
+                <div class="about1-inner__wrapper card1">
+                    <div class="about1-inner__item2">
+                        <img class="bg-img7" src="{% static './assets/images/grain.png' %}" alt="grain">
+                        <img src="{% static './assets/images/online-education.svg' %}" alt="online-education"
+                            class="about1-inner__item2-icon">
+                        <h4 class="about1-inner__item2-title">
+                            Место где обучают опытные эксперты
+                        </h4>
+                        <p class="about1-inner__item2-descr">
+                            Наша сила - это наши преподаватели!
+                            За их плечами больше 7 лет опыта, и они прекрасно знают чему вас обучать.
+                        </p>
+                    </div>
+                </div>
+                <div class="about1-inner__wrapper card2">
+                    <div class="about1-inner__item3">
+                        <img class="bg-img8" src="{% static './assets/images/grain.png' %}" alt="grain">
+                        <img src="{% static './assets/images/education.svg' %}" alt="education" class="about1-inner__item3-icon">
+                        <h4 class="about1-inner__item3-title">
+                            Практические занятия наша формула успеха
+                        </h4>
+                        <p class="about1-inner__item3-descr">
+                            За 4 года Redmouse открыл новую рабочую формулу обучения,
+                            это немного теории и много практических занятий
+                        </p>
+                    </div>
+                </div>
+                <div class="about1-inner__wrapper card3">
+                    <div class="about1-inner__item4">
+                        <img class="bg-img9" src="{% static './assets/images/grain.png' %}" alt="grain">
+                        <img src="{% static './assets/images/study.svg' %}" alt="study" class="about1-inner__item4-icon">
+                        <h4 class="about1-inner__item4-title">
+                            Притягивающие мастер-классы и вебинары
+                        </h4>
+                        <p class="about1-inner__item4-descr">
+                            Каждую неделю мы проводим бесплатные мастер-классы и вебинары для всех желающих познать
+                            новые знания в области IT- и дизайна
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="about2">
+        <div class="container">
+            <div class="about2-inner">
+                <img class="bg-img6" src="{% static './assets/images/Group2.png' %}" alt="Group2">
+                <ol class="about2-list">
+                    <li class="about2-item1">
+                        <h3 class="about2-item__title1">Современные аудитории</h3>
+                        <p class="about2-item__descr1">
+                            Комфортные, светлые и удобные аудитории, оснащённые мультимедийными проекторами помогают
+                            учащимся лучше освоить учебный процесс, позволяют получать больше знаний в рамках
+                            отведенного времени.
+                        </p>
+                    </li>
+                    <img class="bg-img10" src="{% static './assets/images/Illustration2.png' %}" alt="">
+                    <img class="bg-img-mobile" src="{% static './assets/images/Illustration1.png' %}" alt="">
+                    <li class="about2-item2">
+                        <h3 class="about2-item__title2">Фирменный сертификат</h3>
+                        <p class="about2-item__descr2">
+                            Каждый ученик наших курсов получает фирменный сертификат который
+                            становится весомым дополнением к вашему резюме.
+                            Во время курса вы создадите личное портфолио, для того чтобы успешно устроиться на
+                            стажировку.
+                        </p>
+                    </li>
+                    <li class="about2-item3">
+                        <h3 class="about2-item__title3">Запись видео уроков</h3>
+                        <p class="about2-item__descr3">
+                            Запись видео урока можно пересмотреть в удобное время — вы легко наверстаете упущенное, если
+                            по каким-то причинам пропустили занятие. Такая возможность является существенным
+                            преимуществом, так как это повышает шансы успешного завершения обучения.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <div class="container">
+            <h1 class="courses-title">Наши курсы</h1>
+            <hr>
+            <div class="courses-inner">
+                {% for i in courses %}
+                <a href="{% url 'course_detail' i.pk %}">
+                    <div class="courses-inner__item1">
+                        <div class="courses-inner__photo">
+                            {% if i.image %}
+                            <img class="courses-inner__photo-men" src="{{ i.image.url }}" alt="">
+                            {% else %}
+                            <img class="courses-inner__photo-men" src="{% static './assets/images/Course1.png' %}" alt="">
+                            {% endif %}
+                        </div>
+                        <div class="courses-inner__txt">
+                            <h3 class="courses-inner__title">
+                                {{ i.title }}
+                            </h3>
+                            <p class="courses-inner__descr">
+                                {{ i.duration }}
+                            </p>
+                            <a href="{% url 'course_detail' i.pk %}" class="courses-inner__link">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+<!--                <a href="./pages/frontend.html">-->
+<!--                    <div class="courses-inner__item2">-->
+<!--                        <div class="courses-inner__photo">-->
+<!--                            <img class="courses-inner__photo-men" src="{% static './assets/images/Course2.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="courses-inner__txt">-->
+<!--                            <h3 class="courses-inner__title">-->
+<!--                                Motion Дизайнер-->
+<!--                            </h3>-->
+<!--                            <p class="courses-inner__descr">-->
+<!--                                3 мес, 39 занятий-->
+<!--                            </p>-->
+<!--                            <a href="./pages/frontend.html" class="courses-inner__link">-->
+<!--                                Подробнее-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                <a href="./pages/frontend.html">-->
+<!--                    <div class="courses-inner__item3">-->
+<!--                        <div class="courses-inner__photo">-->
+<!--                            <img class="courses-inner__photo-men" src="{% static './assets/images/Course3.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="courses-inner__txt">-->
+<!--                            <h3 class="courses-inner__title">-->
+<!--                                Back-end-->
+<!--                                разработчик-->
+<!--                            </h3>-->
+<!--                            <p class="courses-inner__descr">-->
+<!--                                3 мес, 39 занятий-->
+<!--                            </p>-->
+<!--                            <a href="./pages/frontend.html" class="courses-inner__link">-->
+<!--                                Подробнее-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h1 class="features-title"><span>IT</span>-специалист — для тех, кто хочет:</h1>
+            <hr>
+            <div class="features-inner">
+                <div class="features-inner__item mt">
+                    <div class="features-inner__item-icon">
+                        <img class="icon1" src="{% static './assets/images/icon1.svg' %}" alt="icon1">
+                    </div>
+                    <div class="features-inner__item-txt features-inner__item-txt1">
+                        <h5 class="features-inner__item-title">
+                            Быстро и просто
+                            получить работу в IT
+                        </h5>
+                        <p class="features-inner__item-descr">
+                            Программа обучения поможет быстро переквалифицироваться и начать зарабатывать, если вы
+                            хотите поменять сферу работы, или ваша профессия устарела.
+                        </p>
+                    </div>
+                </div>
+                <div class="features-inner__item">
+                    <div class="features-inner__item-icon features-inner__item-icon-pt">
+                        <img class="icon2" src="{% static './assets/images/icon2.svg' %}" alt="icon1">
+                    </div>
+                    <div class="features-inner__item-txt features-inner__item-txt2">
+                        <h5 class="features-inner__item-title">
+                            Больше зарабатывать
+                        </h5>
+                        <p class="features-inner__item-descr">
+                            Обучитесь IT-профессиям, востребованным во всех сферах бизнеса: от рекламных агентств до
+                            медклиник. Уже во время обучения у вас получится брать проекты на фриланс или работать
+                            удаленно, совмещая подработку с основной работой.
+                        </p>
+                    </div>
+                    <div class="features-inner__item-img">
+                        <img class="work" src="{% static './assets/images/table.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="features-inner__item">
+                    <div class="features-inner__item-icon">
+                        <img class="icon3" src="{% static './assets/images/icon3.svg' %}" alt="icon1">
+                    </div>
+                    <div class="features-inner__item-txt features-inner__item-txt3">
+                        <h5 class="features-inner__item-title">
+                            Развиваться
+                        </h5>
+                        <p class="features-inner__item-descr">
+                            Для тех, у кого учеба — это стиль жизни. Дополнительные знания развивают логическое
+                            мышление, помогают решать задачи, принимать решения и анализировать их.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h1 class="reviews-title">
+                Отзывы наших учеников
+            </h1>
+            <hr>
+            <div class="reviews-inner">
+                <div class="reviews-inner__item reviews-inner__item1">
+                    <div class="block1"></div>
+                    <p class="reviews-inner__item-descr">
+                        1Спасибо менторам за то, что вдохновляете и направляете в нужное направление, Вы у нас топ
+                        ментора
+                    </p>
+                </div>
+                <div class="reviews-inner__item reviews-inner__item2">
+                    <div class="block2"></div>
+                    <p class="reviews-inner__item-descr">
+                        2Спасибо менторам за то, что вдохновляете и направляете в нужное направление, Вы у нас топ
+                        ментора
+                    </p>
+                </div>
+                <img class="bg-img11" src="{% static './assets/images/feviews.png' %}" alt="">
+                <img class="bg-img12" src="{% static './assets/images/like.png' %}" alt="">
+                <img class="bg-img13" src="{% static './assets/images/message.png' %}" alt="">
+                <div class="reviews-inner__item reviews-inner__item3">
+                    <div class="block3"></div>
+                    <p class="reviews-inner__item-descr">
+                        3Спасибо менторам за то, что вдохновляете и направляете в нужное направление, Вы у нас топ
+                        ментора
+                    </p>
+                </div>
+                <div class="reviews-inner__item reviews-inner__item4">
+                    <div class="block4"></div>
+                    <p class="reviews-inner__item-descr">
+                        4Спасибо менторам за то, что вдохновляете и направляете в нужное направление, Вы у нас топ
+                        ментора
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <div class="questions-inner">
+                <div class="questions-inner__item">
+                    <img src="{% static './assets/images/sms.png' %}" alt="" class="questions-inner__img">
+                    <h1 class="questions-inner__title">
+                        Часто задаваемые <span>вопросы</span>
+                    </h1>
+                </div>
+                <div class="questions-inner-all-accordions__accordion">
+                    {% for i in questions %}
+                    <div class="questions-inner-all-accordions__accordion__header">
+                        {{ i.title }}
+                    </div>
+                    <div class="questions-inner-all-accordions__accordion__header__body">
+                        <p class="questions-inner-all-accordions__accordion__header__descr">
+                            {{ i.answer }}
+                        </p>
+                    </div>
+                    <hr class="questions-inner-all-accordions__accordion-hr">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="events">
+        <div class="container">
+            <div class="events-inner">
+                <img class="bg-img14" src="{% static './assets/images/figure-block.png' %}" alt="">
+                <h3 class="events-inner__title">
+                    Ближайшие мероприятия
+                </h3>
+                {% for i in meetings %}
+                <div class="events-inner__item item events-inner__item1">
+                    <img class="events-inner__img" src="{% static './assets/images/background1.png' %}" alt="">
+                    <div class="events-inner__txt1">
+                        <p class="events-inner__descrr">
+                            <a class="events-inner__link1" href="#events">{{ i.title }}</a>
+                        </p>
+                        <p class="events-inner__descr2">
+                            {{ i.finish_date }} <span class="off">Оффлайн</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="btn-modal">
+        <div class="all-modal">
+            <form class="events_form" method="post" action="{% url 'applmeet' i.pk %}">
+                <div class="events_item-blc">
+                    <h2 class="events-title-blc1">{{ i.title }}</h2>
+                    <p class="events_descr-blc1">
+                        {{ i.finish_date }} <span class="off-modal">Оффлайн</span>
+                    </p>
+                    <p class="events_descr-blc2">
+                        {{ i.description }}
+                    </p>
+                </div>
+                {% csrf_token %}
+                {{ form_meet.name }}
+                {{ form_meet.phone }}
+                <button value="Submit" class="modal__btn">Записаться</button>
+            </form>
+        </div>
+        <button class="close">X</button>
+    </div>
+                {% endfor %}
+
+                <img class="bg-img15" src="{% static './assets/images/figure-block2.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="btn-modal">
+        <div class="all-modal">
+            <form class="events_form">
+                <div class="events_item-blc">
+                    <h2 class="events-title-blc1">Бесплатный открытый урок по программированию</h2>
+                    <p class="events_descr-blc1">
+                        12/08/22 <span class="time-modal">15:00</span> <span class="off-modal">Оффлайн</span>
+                    </p>
+                    <p class="events_descr-blc2">
+                        Приглашаем тебя на бесплатный открытый урок, на котором мы расскажем, как и с чего начать
+                        программирование
+                    </p>
+                </div>
+                <input class="events_name" type="text" placeholder="Имя">
+                <input class="events_phone" type="tel" placeholder="Номер телефона">
+                <a href="" class="modal__btn">Записаться</a>
+            </form>
+        </div>
+        <button class="close">X</button>
+    </div>
+
+
+
+    <section class="call-to-action" id="call-to-action">
+        <div class="container">
+            <div class="call-to-action__inner">
+                <div class="call-to-action__inner-item">
+                    <h2 class="call-to-action__inner-title">
+                        Хочешь стать IT-специалистом?
+                    </h2>
+                    <p class="call-to-action__inner-descr">
+                        Оставляй заявку и мы тебе перезвоним
+                    </p>
+                    <img src="{% static './assets/images/Union.svg' %}" alt="" class="call-to-action__inner-img">
+                    <form class="call-to-action__inner-form" method="post" action="">
+                        {% csrf_token %}
+                        {{ form.name }}
+                        {{ form.phone }}
+                        <!-- <span class="error" aria-live="polite"></span> -->
+                        <img class="call-to-action-img" src="{% static './assets/images/girl.png' %}" alt="girl">
+                        <input class="submit" type="submit" value="Отправить" required>
+                    </form>
+                </div>
+            </div>
+            <!-- <form novalidate>
+                <p>
+                    <label for="mail">
+                        <span>Please enter an email address:</span>
+                        <input type="email" id="mail" name="mail" required minlength="8">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                </p>
+                <button>Submit</button>
+            </form> -->
+        </div>
+        <div class="btn-modal2">
+            <div class="all-modal2">
+                <form class="events_form2">
+                    <div class="events_item-blc2">
+                        <h2 class="events_title-blc2">
+                            Заявка отправлена! <br>
+                            Мы скоро с тобой свяжемся)
+                        </h2>
+                        <img class="events_img-blc" src="{% static './assets/images/window-photo.png' %}" alt="">
+                </form>
+            </div>
+            <button class="close2">X</button>
+        </div>
+    </section>
+
+
+
+{% endblock %}
